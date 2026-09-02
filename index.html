@@ -581,7 +581,13 @@
 
       <h1 style="margin:16px 0 0;font:600 {{ heroTitle2 }} Spectral,serif;color:#fff;letter-spacing:-.015em;text-wrap:balance">Обжариваем кофе для дома и бизнеса</h1>
 
-      <p style="margin:{{ heroSloganTop }} 0 0;font:italic 600 {{ heroSloganSize }} Spectral,serif;color:#E9C79A;letter-spacing:-.005em;max-width:{{ heroSloganMax }};text-wrap:balance">Кофе с женским характером и ярким вкусом к жизни</p>
+      <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+        <span style="display:inline-flex;align-items:center;height:32px;padding:0 14px;border-radius:999px;background:#4E1D74;color:#fff;font:600 13px Manrope,sans-serif">своё производство</span>
+        <span style="display:inline-flex;align-items:center;height:32px;padding:0 14px;border-radius:999px;background:#4E1D74;color:#fff;font:600 13px Manrope,sans-serif">свежая обжарка</span>
+        <span style="display:inline-flex;align-items:center;height:32px;padding:0 14px;border-radius:999px;border:1.5px solid rgba(255,255,255,.35);color:#fff;font:600 13px Manrope,sans-serif">доставка по России</span>
+      </div>
+
+      <p style="margin:16px 0 0;font:400 15.5px/1.55 Manrope,sans-serif;color:rgba(255,255,255,.88);max-width:{{ heroSloganMax }};text-wrap:pretty">Покупаем зелёное зерно напрямую у ферм Африки, Америки и Азии, обжариваем его на собственном заводе и отправляем вам в течение 48 часов. Дата обжарки — на каждой пачке.</p>
 
       <div style="display:flex;gap:10px;margin-top:{{ heroBtnTop }};flex-wrap:wrap">
         <a href="#" style="display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 28px;border-radius:999px;background:#4E1D74;color:#fff;font:700 15px Manrope,sans-serif" style-hover="background:#fff;color:#2A1B13">Выбрать кофе</a>
@@ -1441,7 +1447,7 @@ class Component extends DCLogic {
       heroTitle2: mob ? '29px/1.12' : tab ? '37px/1.07' : '50px/1.04',
       heroSloganSize: mob ? '16px/1.35' : tab ? '19px/1.3' : '22px/1.3',
       heroSloganTop: mob ? '10px' : '12px',
-      heroSloganMax: mob ? '100%' : '430px',
+      heroSloganMax: mob ? '100%' : tab ? '520px' : '560px',
       heroBtnTop: mob ? '22px' : '28px',
       heroFactCols: mob ? '1fr' : 'repeat(3,1fr)',
       heroFactPad: mob ? '15px 22px' : '20px 26px',
